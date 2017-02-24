@@ -14,6 +14,7 @@ Classe para gerenciamento de números inteiros
   - division(FloatObject:: $float) - Método que realiza a soma do número armazenado com o parametro informado pelo usuário
   - module(FloatObject:: $float) - Método que realiza a divisão até que reste apenas o resto da divisão
   - exponentiation(FloatObject:: $float) - Método que realiza operação de exponenciação de um número informado
+  - format($decimals = 0, $decimalPoint = ".", $thousandsSeparator = ",") - Método que formata o valor e retorna o valor float formatado como string
 
 
 ## Utilização via composer
@@ -46,6 +47,7 @@ try{
 
     $numA = new FloatObject('1.65');
     var_dump($numA->isEquals($numB));
+    var_dump($numA->format(2, ',', '.'));
 }catch(\Exception $e){
     echo $e->getMessage();
 }

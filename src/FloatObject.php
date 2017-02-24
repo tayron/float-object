@@ -174,16 +174,32 @@ class FloatObject
     {
         return (float)$this->float;
     }
+    
+    /**
+     * FloatObject::format
+     * 
+     * Método que formata número float
+     * 
+     * @param int $decimals Número de casas decimais
+     * @param string $decimalPoint Stirng separadora de casa decimal
+     * @param string $thousandsSeparator Stirng separadora de casa milhar
+     * 
+     * @return String Versão formatada do valor atual
+     */
+    public function format($decimals = 0, $decimalPoint = ".", $thousandsSeparator = ",")
+    {
+        return (string)number_format($this->getValue(), $decimals, $decimalPoint, $thousandsSeparator);
+    }
 
     /**
      * FloatObject::__toString
      * 
      * Método que retorna o valor do conteúdo do objeto em forma de texto
      * 
-     * @return integer Valor do conteúdo do objeto em texto
+     * @return string Valor do conteúdo do objeto em texto
      */
 	public function __toString()
 	{
-		return (int)$this->float;
+		return (string)$this->float;
 	}	
 }

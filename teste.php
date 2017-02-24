@@ -10,7 +10,6 @@ try{
     
     $numA->addition($numB);
     
-
     var_dump($numA);
     var_dump($numB);
     
@@ -18,6 +17,8 @@ try{
 
     $numA = new FloatObject('1.65');
     var_dump($numA->isEquals($numB));
+    
+    var_dump($numA->format(2, ',', '.'));
 }catch(\Exception $e){
     echo $e->getMessage();
 }
