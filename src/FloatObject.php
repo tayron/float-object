@@ -39,15 +39,15 @@ class FloatObject
     /**
      * FloatObject::isEquals
      * 
-     * Método que verifica se o conteúdo do objeto corrente é igual ao do objeto Integer informado
+     * Método que verifica se o conteúdo do objeto corrente é igual ao do objeto Float informado
      * 
-     * @param FloatObject $float Objeto Integer informado pelo usuário
+     * @param FloatObject $float Objeto Float informado pelo usuário
      * 
      * @return boolean Retorna true se o conteúdo for igual ou false
      */
 	public function isEquals(FloatObject $float)
 	{
-		return ($this == $float);
+		return ($this->getValue() === $float->getValue());
 	}
 	
     /**
