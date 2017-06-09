@@ -1,4 +1,4 @@
-## FloatObject:: 1.0.0
+## FloatObject
 
 Classe para gerenciamento de números inteiros
 
@@ -22,7 +22,7 @@ Classe para gerenciamento de números inteiros
 ```sh
     "require": {
         ...
-        "tayron/float-object" : "1.0.0"
+        "tayron/float-object" : "dev-master"
         ... 
     },    
 ```
