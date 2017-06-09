@@ -22,7 +22,7 @@ Classe para gerenciamento de números inteiros
 ```sh
     "require": {
         ...
-        "tayron/float-object" : "dev-master"
+        "tayron/float-object" : "1.0.0"
         ... 
     },    
 ```
